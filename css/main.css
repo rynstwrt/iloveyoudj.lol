@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #171717;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+}
+header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 35px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f53f3f;
+  min-width: 200px;
+}
+header h1 span {
+  color: #f53f3f;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,60 @@
+$background-color: #171717;
+$text-color: white;
+$accent-color: #f53f3f;
+
+
+$font-1: 'Josefin Sans', sans-serif;
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body
+{
+    height: 100%;
+}
+
+
+body
+{
+    background-color: $background-color;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header
+{
+    padding: 20px;
+    display: flex;
+
+    h1
+    {
+        font-family: $font-1;
+        line-height: 35px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $accent-color;
+        min-width: 200px;
+
+        span
+        {
+            color: $accent-color;
+        }
+    }
+}
+
+
+main
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
