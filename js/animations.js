@@ -1,9 +1,12 @@
-anime({
+anime.timeline({
     targets: 'path',
-    strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutSine',
-    duration: 1500,
-    delay: function(el, i) { return i * 250 },
-    direction: 'alternate',
     loop: true
-});
+}).add({
+    strokeDashoffset: [anime.setDashoffset, 0],
+    delay: 650,
+    strokeWidth: 8
+}).add({
+    strokeDashoffset: [0, anime.setDashoffset],
+    strokeWidth: 0
+}, 5000);
